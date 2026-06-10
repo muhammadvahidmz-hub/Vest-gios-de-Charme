@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vestígios de Charme | Guest House em Figueira da Foz</title>
+  <meta name="description" content="Vestígios de Charme - Guest house em Figueira da Foz, mistura de charme rústico e conforto moderno, a poucos minutos da praia. Reserve já a sua estadia." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230a3d62' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='62' font-family='serif' font-size='50' font-weight='bold' fill='%23c9a14a' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-main">Vestígios de Charme</span>
+        <span class="logo-sub">Guest House · Figueira da Foz</span>
+      </div>
+
+      <button class="nav-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home" data-en="Home">Início</a></li>
+          <li><a href="#rooms" data-en="Rooms">Quartos</a></li>
+          <li><a href="#experience" data-en="Experience">Experiência</a></li>
+          <li><a href="#gallery" data-en="Gallery">Galeria</a></li>
+          <li><a href="#testimonials" data-en="Reviews">Avaliações</a></li>
+          <li><a href="#location" data-en="Location">Localização</a></li>
+          <li><a href="#contact" data-en="Contact">Contacto</a></li>
+        </ul>
+        <button class="lang-toggle" id="lang-toggle" onclick="toggleLanguage()">EN</button>
+        <a class="btn btn-gold nav-cta" href="#booking" data-en="Book Now">Reservar Agora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-tagline animate-fade-up" data-en="Where rustic charm meets modern comfort">Onde o charme rústico encontra o conforto moderno</p>
+      <h1 class="animate-fade-up delay-1">Vestígios de Charme</h1>
+      <p class="hero-subtitle animate-fade-up delay-2" data-en="A welcoming guest house in Figueira da Foz, just minutes from the sea, combining authenticity, elegance and tranquility.">
+        Um guest house acolhedor em Figueira da Foz, a poucos minutos do mar, que combina
+        autenticidade, elegância e tranquilidade.
+      </p>
+      <div class="hero-buttons animate-fade-up delay-3">
+        <a href="#rooms" class="btn btn-gold" data-en="View Rooms">Ver Quartos</a>
+        <a href="#booking" class="btn btn-outline" data-en="Book Now">Reservar Agora</a>
+      </div>
+      <div class="hero-highlights animate-fade-up delay-4">
+        <span><i data-lucide="bed-double" class="icon-small"></i> <span data-en="Double &amp; Twin">Duplo &amp; Twin</span></span>
+        <span><i data-lucide="map-pin" class="icon-small"></i> Figueira da Foz</span>
+        <span><i data-lucide="wifi" class="icon-small"></i> <span data-en="Free Wifi">Wifi Gratuito</span></span>
+      </div>
+      <p class="hero-extra-bed animate-fade-up delay-4">
+        <i data-lucide="plus-circle" class="icon-tiny"></i> <span data-en="Extra bed available on request, subject to availability">Cama extra disponível mediante pedido e disponibilidade</span>
+      </p>
+    </div>
+    <div class="hero-scroll-indicator">
+      <i data-lucide="chevron-down" class="scroll-arrow"></i>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="section section-light">
+    <div class="container">
+      <header class="section-header scroll-reveal">
+        <h2 data-en="Our Rooms">Os Nossos Quartos</h2>
+        <p data-en="Each of our rooms has been thoughtfully designed, combining natural materials, soft colours and modern comfort for a memorable stay.">
+          Cada um dos nossos quartos foi pensado ao detalhe, unindo materiais naturais, cores suaves e
+          conforto moderno para uma estadia memorável.
+        </p>
+      </header>
+
+      <div class="discount-banner scroll-reveal">
+        <i data-lucide="tag" class="discount-icon"></i>
+        <div>
+          <strong data-en="Exclusive 10% discount by booking directly on our website">10% de desconto exclusivo ao reservar diretamente no nosso website</strong>
+          <span data-en="The best rate is always here.">A melhor tarifa está sempre aqui.</span>
+        </div>
+      </div>
+
+      <div class="rooms-grid">
+        <!-- Room Card 1 -->
+        <article class="room-card scroll-reveal">
+          <div class="room-slider">
+            <div class="room-slide active" style="background-image: url('images/Quarto duplo.jpg');"></div>
+            <div class="room-slide" style="background-image: url('images/Duplo 3.jpeg');"></div>
+            <div class="room-slide" style="background-image: url('images/Duplo 2.jpeg');"></div>
+            <div class="room-slide" style="background-image: url('images/Duplo Toalha.jpeg');"></div>
+            <div class="room-slide" style="background-image: url('images/TV.jpeg');"></div>
+            <div class="room-slide" style="background-image: url('images/Secador.jpeg');"></div>
+            <button class="slider-btn slider-prev" aria-label="Anterior">&#8249;</button>
+            <button class="slider-btn slider-next" aria-label="Seguinte">&#8250;</button>
+            <div class="slider-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="room-content">
+            <h3 data-en="Double Room">Quarto Duplo</h3>
+            <p data-en="Cosy and comfortable with a double bed, ideal for couples on a romantic getaway or a relaxing break.">Aconchego e conforto com cama de casal, ideal para casais em escapadas românticas ou descanso.</p>
+            <ul class="room-features">
+              <li><i data-lucide="bed-single" class="icon-tiny"></i> <span data-en="Double bed">Cama de casal</span></li>
+              <li><i data-lucide="bath" class="icon-tiny"></i> <span data-en="Private bathroom">Casa de banho privada</span></li>
+              <li><i data-lucide="wifi" class="icon-tiny"></i> <span data-en="Free wifi">Wifi gratuito</span></li>
+            </ul>
+            <div class="room-footer">
+              <button class="btn btn-small btn-gold" data-scroll="#booking" data-en="Book">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Room Card 2 -->
+        <article class="room-card scroll-reveal">
+          <div class="room-slider">
+            <div class="room-slide active" style="background-image: url('images/Quarto twin.jpg');"></div>
+            <div class="room-slide" style="background-image: url('images/Twin 2.jpeg');"></div>
+            <div class="room-slide" style="background-image: url('images/Twin Toalha.jpeg');"></div>
+            <div class="room-slide" style="background-image: url('images/TV.jpeg');"></div>
+            <div class="room-slide" style="background-image: url('images/Secador.jpeg');"></div>
+            <button class="slider-btn slider-prev" aria-label="Anterior">&#8249;</button>
+            <button class="slider-btn slider-next" aria-label="Seguinte">&#8250;</button>
+            <div class="slider-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="room-content">
+            <h3 data-en="Twin Room">Quarto Twin</h3>
+            <p data-en="Perfect for friends or travellers who prefer single beds, with all essential comforts.">Perfeito para amigos ou viajantes que preferem camas individuais, com todo o conforto essencial.</p>
+            <ul class="room-features">
+              <li><i data-lucide="bed-double" class="icon-tiny"></i> <span data-en="2 single beds">2 camas solteiras</span></li>
+              <li><i data-lucide="eye" class="icon-tiny"></i> <span data-en="City view">Vista para a cidade</span></li>
+              <li><i data-lucide="wind" class="icon-tiny"></i> <span data-en="Air conditioning">Ar condicionado</span></li>
+            </ul>
+            <div class="room-footer">
+              <button class="btn btn-small btn-gold" data-scroll="#booking" data-en="Book">Reservar</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section section-dark">
+    <div class="container experience-grid">
+      <div class="scroll-reveal">
+        <header class="section-header section-header-left">
+          <h2 data-en="The Experience">A Experiência</h2>
+          <p data-en="At Vestígios de Charme, every detail has been crafted to create a calm, authentic and comfortable atmosphere where you truly feel at home.">
+            No Vestígios de Charme, cada detalhe foi pensado para criar um ambiente tranquilo, autêntico e
+            confortável, onde se sente verdadeiramente em casa.
+          </p>
+        </header>
+        <ul class="experience-list">
+          <li>
+            <i data-lucide="coffee" class="icon-accent"></i>
+            <div>
+              <strong data-en="Homemade breakfast (optional)">Pequeno-almoço caseiro (opcional)</strong>
+              <span data-en="Available on request, with local and fresh products.">Disponível mediante reserva, com produtos locais e frescos.</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="home" class="icon-accent"></i>
+            <div>
+              <strong data-en="Welcoming common areas">Áreas comuns acolhedoras</strong>
+              <span data-en="A blend of rustic and modern elements.">Mistura de elementos rústicos e modernos.</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="map-pin" class="icon-accent"></i>
+            <div>
+              <strong data-en="Prime location">Localização privilegiada</strong>
+              <span data-en="Close to the beach, town centre and points of interest.">Perto da praia, do centro e de pontos de interesse.</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="heart" class="icon-accent"></i>
+            <div>
+              <strong data-en="Peaceful atmosphere">Ambiente calmo</strong>
+              <span data-en="Ideal for romantic getaways or family relaxation.">Ideal para escapadinhas românticas ou descanso em família.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="experience-side scroll-reveal">
+        <div class="experience-card">
+          <i data-lucide="clock" class="icon-large"></i>
+          <h3 data-en="Check-in &amp; Check-out">Check-in &amp; Check-out</h3>
+          <p data-en="Check-in: from 15:00<br>Check-out: until 12:00">Check-in: a partir das 15:00<br>Check-out: até às 12:00</p>
+        </div>
+        <div class="experience-card">
+          <i data-lucide="concierge-bell" class="icon-large"></i>
+          <h3 data-en="Services">Serviços</h3>
+          <p data-en="Free wifi, optional breakfast, daily cleaning, personalised recommendations.">Wifi gratuito, pequeno-almoço opcional, limpeza diária, recomendações personalizadas.</p>
+        </div>
+        <div class="experience-card">
+          <i data-lucide="car" class="icon-large"></i>
+          <h3 data-en="Parking">Estacionamento</h3>
+          <p data-en="Several paid and free parking options available nearby.">Várias opções de estacionamento pago e não pago nas proximidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section section-light">
+    <div class="container">
+      <header class="section-header scroll-reveal">
+        <h2 data-en="Gallery">Galeria</h2>
+        <p data-en="Some details of our space and the atmosphere of Vestígios de Charme.">Alguns detalhes do nosso espaço e da atmosfera de Vestígios de Charme.</p>
+      </header>
+      <div class="gallery-grid">
+        <div class="gallery-item scroll-reveal" style="background-image: url('images/Recepção.jpeg');" data-lightbox="images/Recepção.jpeg"></div>
+        <div class="gallery-item scroll-reveal" style="background-image: url('images/Cozinha.jpg');" data-lightbox="images/Cozinha.jpg"></div>
+        <div class="gallery-item scroll-reveal" style="background-image: url('images/Sala de refeições.jpg');" data-lightbox="images/Sala de refeições.jpg"></div>
+        <div class="gallery-item scroll-reveal" style="background-image: url('images/Geral 3.jpg');" data-lightbox="images/Geral 3.jpg"></div>
+        <div class="gallery-item scroll-reveal" style="background-image: url('images/Geral 4.jpg');" data-lightbox="images/Geral 4.jpg"></div>
+        <div class="gallery-item scroll-reveal" style="background-image: url('images/Porta 2.jpeg');" data-lightbox="images/Porta 2.jpeg"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Fechar"><i data-lucide="x"></i></button>
+    <button class="lightbox-prev" aria-label="Anterior"><i data-lucide="chevron-left"></i></button>
+    <button class="lightbox-next" aria-label="Seguinte"><i data-lucide="chevron-right"></i></button>
+    <img class="lightbox-image" src="" alt="Galeria">
+  </div>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section section-dark">
+    <div class="container">
+      <header class="section-header scroll-reveal">
+        <h2 data-en="What Our Guests Say">O Que Dizem os Nossos Hóspedes</h2>
+        <p data-en="Real reviews from our guests.">Avaliações reais de quem nos visitou.</p>
+      </header>
+
+      <div class="google-rating-bar scroll-reveal">
+        <svg class="google-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        <div class="google-rating-info">
+          <span class="google-rating-number">4,6</span>
+          <div class="google-rating-stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-half"></i>
+          </div>
+          <span class="google-rating-label" data-en="on Google">no Google</span>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+        <article class="testimonial-card scroll-reveal">
+          <div class="testimonial-stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <p class="testimonial-text"
+             data-original="&quot;Camere bellissime, letti grandi e comodi, bello l'edificio. Ottima assistenza.&quot;"
+             data-translated="&quot;Beautiful rooms, large and comfortable beds, lovely building. Excellent service.&quot;"
+             data-lang="original">
+            "Camere bellissime, letti grandi e comodi, bello l'edificio. Ottima assistenza."
+          </p>
+          <button class="translate-btn" onclick="toggleTranslation(this)">
+            <i data-lucide="languages" class="icon-tiny"></i> Translate
+          </button>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">EC</div>
+            <div>
+              <strong>Elisabetta Capocchi</strong>
+              <span>Google Maps</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card scroll-reveal">
+          <div class="testimonial-stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <p class="testimonial-text"
+             data-original="&quot;Muito acolhedor. Quartos novos, um hotel moderno. Localização óptima, mesmo ao lado do casino e vários restaurantes. Perfeito. Nada a apontar.&quot;"
+             data-translated="&quot;Very welcoming. New rooms, a modern hotel. Excellent location, right next to the casino and several restaurants. Perfect. Nothing to criticise.&quot;"
+             data-lang="original">
+            "Muito acolhedor. Quartos novos, um hotel moderno. Localização óptima, mesmo ao lado do casino e vários restaurantes. Perfeito. Nada a apontar."
+          </p>
+          <button class="translate-btn" onclick="toggleTranslation(this)">
+            <i data-lucide="languages" class="icon-tiny"></i> Translate
+          </button>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JO</div>
+            <div>
+              <strong>João Oliveira</strong>
+              <span>Google Maps</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card scroll-reveal">
+          <div class="testimonial-stars">
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+            <i data-lucide="star" class="star-filled"></i>
+          </div>
+          <p class="testimonial-text"
+             data-original="&quot;Tout été parfait, hotel refait à neuf, personnel très sympa. Je recommande.&quot;"
+             data-translated="&quot;Everything was perfect, newly renovated hotel, very friendly staff. I highly recommend.&quot;"
+             data-lang="original">
+            "Tout été parfait, hotel refait à neuf, personnel très sympa. Je recommande."
+          </p>
+          <button class="translate-btn" onclick="toggleTranslation(this)">
+            <i data-lucide="languages" class="icon-tiny"></i> Translate
+          </button>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MS</div>
+            <div>
+              <strong>Manuel da Silva</strong>
+              <span>Google Maps</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="section section-light">
+    <div class="container location-grid">
+      <div class="scroll-reveal">
+        <header class="section-header section-header-left">
+          <h2 data-en="Location">Localização</h2>
+          <p data-en="We are located in Figueira da Foz, close to the beach, the town centre and several points of interest such as the Casino, the Marina and Serra da Boa Viagem.">
+            Estamos situados em Figueira da Foz, perto da praia, do centro e de vários pontos de interesse como
+            o Casino, a Marina e a Serra da Boa Viagem.
+          </p>
+        </header>
+        <ul class="location-list">
+          <li>
+            <i data-lucide="waves" class="icon-accent"></i>
+            <div>
+              <strong data-en="Beach">Praia</strong>
+              <span data-en="Just a few minutes on foot or by car">A poucos minutos a pé ou de carro</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="utensils" class="icon-accent"></i>
+            <div>
+              <strong data-en="Restaurants &amp; Cafés">Restaurantes &amp; Cafés</strong>
+              <span data-en="Various options nearby">Opções variadas nas proximidades</span>
+            </div>
+          </li>
+          <li>
+            <i data-lucide="car" class="icon-accent"></i>
+            <div>
+              <strong data-en="Access">Acesso</strong>
+              <span data-en="Easy access by car and public transport">Fácil acesso por carro e transportes públicos</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="map-wrapper scroll-reveal">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3050.123456789!2d-8.864681824709427!3d40.14994927183448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd223724e7d9e7d9d%3A0x60f139c77d326b22!2sR.%20C%C3%A2ndido%20dos%20Reis%206%2C%203080-155%20Figueira%20da%20Foz!5e0!3m2!1spt-PT!2spt!4v1764176017624!5m2!1spt-PT!2spt"
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="section section-dark">
+    <div class="container">
+      <header class="section-header scroll-reveal" style="text-align:center; margin-bottom: 2.5rem;">
+        <h2 data-en="Book Online">Reservas Online</h2>
+        <p data-en="Book directly and get the best available rate.">Reserve diretamente e garanta a melhor tarifa disponível.</p>
+      </header>
+
+      <div id="booking-engine-container" class="booking-engine-wrapper scroll-reveal">
+
+        <div class="booking-btn-wrapper">
+          <a href="https://www.bookings247.com.au/booking2/booknow.php?property_id=4177" target="_blank" rel="noopener" class="btn btn-gold btn-booking-cta">
+            <i data-lucide="calendar-check" class="icon-small"></i>
+            <span data-en="Check Availability &amp; Book">Ver Disponibilidade &amp; Reservar</span>
+          </a>
+          <p class="booking-btn-note" data-en="You will be redirected to our secure booking platform.">Será redirecionado para a nossa plataforma de reservas segura.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-light">
+    <div class="container">
+      <header class="section-header scroll-reveal" style="text-align:center; margin-bottom: 2.5rem;">
+        <h2 data-en="Contact">Contacto</h2>
+        <p data-en="Get in touch for questions, special requests or additional information.">Fale connosco para dúvidas, pedidos especiais ou informações adicionais.</p>
+      </header>
+      <ul class="contact-details contact-details-centered scroll-reveal">
+        <li>
+          <i data-lucide="mail" class="icon-accent"></i>
+          <a href="mailto:reservas@vestigiosdecharme.com">reservas@vestigiosdecharme.com</a>
+        </li>
+        <li>
+          <i data-lucide="phone" class="icon-accent"></i>
+          <a href="tel:+351932709181">+351 932 709 181</a>
+        </li>
+        <li>
+          <i data-lucide="map-pin" class="icon-accent"></i>
+          <span>R. Cândido dos Reis 6, 3080-155 Figueira da Foz, Portugal</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">Vestígios de Charme</span>
+          <p data-en="Guest house in Figueira da Foz combining rustic charm and modern comfort.">Guest house em Figueira da Foz que combina charme rústico e conforto moderno.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-en="Quick Links">Links Rápidos</h4>
+          <ul>
+            <li><a href="#rooms" data-en="Rooms">Quartos</a></li>
+            <li><a href="#gallery" data-en="Gallery">Galeria</a></li>
+            <li><a href="#contact" data-en="Contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-en="Contact">Contactos</h4>
+          <ul>
+            <li><i data-lucide="mail" class="icon-tiny"></i> reservas@vestigiosdecharme.com</li>
+            <li><i data-lucide="phone" class="icon-tiny"></i> +351 932 709 181</li>
+            <li><i data-lucide="map-pin" class="icon-tiny"></i> R. Cândido dos Reis 6, 3080-155 Figueira da Foz</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Vestígios de Charme. <span data-en="All rights reserved.">Todos os direitos reservados.</span></p>
+        <div class="footer-legal">
+          <a href="#" data-en="Privacy Policy">Política de Privacidade</a>
+          <a href="#" data-en="Terms and Conditions">Termos e Condições</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
