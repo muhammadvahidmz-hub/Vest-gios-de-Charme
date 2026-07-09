@@ -435,7 +435,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  transform: translateY(8px);
+  transform: translateY(10px);
 }
 
 .discount-banner strong {
