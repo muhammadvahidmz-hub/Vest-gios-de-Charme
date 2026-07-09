@@ -415,6 +415,7 @@ body {
 .discount-banner {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1.25rem;
   background: linear-gradient(135deg, var(--navy) 0%, #0d5080 100%);
   border: 1.5px solid var(--gold);
